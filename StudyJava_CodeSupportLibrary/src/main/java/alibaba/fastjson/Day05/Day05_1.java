@@ -25,6 +25,7 @@ public class Day05_1 {
 
         try {
             oos = new ObjectOutputStream(new FileOutputStream("testSerialize"));
+            oos.writeObject(people);
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
